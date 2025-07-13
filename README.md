@@ -1,3 +1,3 @@
 #Kokoa clone 2025 Update
 
-HTML & CSS ard so much fun!
+HTML & CSS are so much fun!
