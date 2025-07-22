@@ -22,16 +22,16 @@
     <!-- 모바일 상태바: 신호, 시간, 배터리 표시 -->
     <header class="status-bar">
         <div class="status-bar__column">
-            <span>No Service</span>
-            <i class="fa-solid fa-wifi"></i>
+            <span class="status-bar__text">No Service</span>
+            <i class="fa-solid fa-wifi status-bar__icon"></i>
         </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
+        <div class="status-bar__column status-bar__column--center">
+            <span class="status-bar__text">18:43</span>
         </div>
-        <div class="status-bar__column">
-            <span>11%</span>
-            <i class="fa-solid fa-battery-quarter fa-lg"></i>
-            <i class="fa-solid fa-bolt"></i>
+        <div class="status-bar__column status-bar__column--right">
+            <span class="status-bar__text">11%</span>
+            <i class="fa-solid fa-battery-quarter fa-lg status-bar__icon--battery"></i>
+            <i class="fa-solid fa-bolt status-bar__icon--bolt"></i>
         </div>
     </header>
 
@@ -44,11 +44,11 @@
 
     <!-- ===== LOGIN FORM ===== -->
     <!-- 로그인 폼: 이메일, 비밀번호 입력 및 로그인 버튼 -->
-    <form id="login-form">
+    <form class="login-form">
         <input type="text" placeholder="Email or Phone number" required class="login-form__input">
         <input type="password" placeholder="Password" required class="login-form__input">
         <input type="submit" value="Log In" class="login-form__btn">
-        <a href="#" class="find-password">Find Kokoa Account or Password</a>
+        <a href="#" class="login-form__link">Find Kokoa Account or Password</a>
     </form>
 
 </body>
