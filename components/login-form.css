@@ -1,0 +1,62 @@
+/* ===== LOGIN FORM COMPONENT ===== */
+/* 
+ * 로그인 폼 컴포넌트 스타일
+ * BEM 방법론을 적용하여 체계적으로 구성
+ */
+
+/* ===== BLOCK ===== */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+/* ===== ELEMENTS ===== */
+.login-form__input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.login-form__input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.login-form__btn {
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.login-form__link {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
+
+/* ===== MODIFIERS ===== */
+.login-form__input--error {
+    border-bottom-color: #ff4444;
+}
+
+.login-form__btn--disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* ===== STATES ===== */
+.login-form__input:focus:not([type="submit"]) {
+    border-bottom-color: var(--yellow);
+}
+
+.login-form__btn:hover {
+    background-color: #fdd835;
+}
