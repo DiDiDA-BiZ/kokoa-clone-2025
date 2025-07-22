@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS FILES ===== -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- ===== PAGE TITLE ===== -->
+    <title>Welcome to kokoa Talk</title>
+
+    <!-- ===== EXTERNAL RESOURCES ===== -->
+    <script src="https://kit.fontawesome.com/2369bc4cc5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ===== STATUS BAR ===== -->
+    <!-- 모바일 상태바: 신호, 시간, 배터리 표시 -->
+    <header class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>11%</span>
+            <i class="fa-solid fa-battery-quarter fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </header>
+
+    <!-- ===== WELCOME HEADER ===== -->
+    <!-- 환영 메시지 섹션 -->
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a kokoa account, log in with your email or phone number.</p>
+    </header>
+
+    <!-- ===== LOGIN FORM ===== -->
+    <!-- 로그인 폼: 이메일, 비밀번호 입력 및 로그인 버튼 -->
+    <form id="login-form">
+        <input type="text" placeholder="Email or Phone number" required class="login-form__input">
+        <input type="password" placeholder="Password" required class="login-form__input">
+        <input type="submit" value="Log In" class="login-form__btn">
+        <a href="#" class="find-password">Find Kokoa Account or Password</a>
+    </form>
+
+</body>
+
+</html>
