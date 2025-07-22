@@ -1,17 +1,36 @@
-/* ===== LOGIN FORM COMPONENT ===== */
+/* ===== LOGIN SCREEN ===== */
 /* 
- * 로그인 폼 컴포넌트 스타일
- * BEM 방법론을 적용하여 체계적으로 구성
+ * 로그인 페이지 전체 스타일
+ * 페이지별 특화된 레이아웃과 스타일 정의
  */
 
-/* ===== BLOCK ===== */
+/* ===== WELCOME HEADER ===== */
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.5;
+}
+
+/* ===== LOGIN FORM ===== */
 .login-form {
     display: flex;
     flex-direction: column;
     margin: 0px 30px;
 }
 
-/* ===== ELEMENTS ===== */
 .login-form__input {
     border: none;
     padding: 15px 0px;
@@ -42,21 +61,26 @@
     font-size: 13px;
 }
 
-/* ===== MODIFIERS ===== */
-.login-form__input--error {
-    border-bottom-color: #ff4444;
-}
-
-.login-form__btn--disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-/* ===== STATES ===== */
+/* ===== STATES & INTERACTIONS ===== */
 .login-form__input:focus:not([type="submit"]) {
     border-bottom-color: var(--yellow);
 }
 
 .login-form__btn:hover {
     background-color: #fdd835;
+}
+
+.login-form__input:invalid {
+    border-bottom-color: #ff4444;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .welcome-header__text {
+        width: 80%;
+    }
+
+    .login-form {
+        margin: 0px 20px;
+    }
 }

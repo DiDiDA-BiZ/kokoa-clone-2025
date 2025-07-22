@@ -14,10 +14,8 @@
 /* CSS 변수 정의 */
 @import "../components/status-bar.css";
 /* 상태바 컴포넌트 */
-@import "../components/welcome-header.css";
-/* 환영 헤더 컴포넌트 */
-@import "../components/login-form.css";
-/* 로그인 폼 컴포넌트 */
+@import "../screens/login.css";
+/* 로그인 페이지 전체 */
 
 /* ===== GLOBAL STYLES ===== */
 body {
@@ -27,11 +25,4 @@ body {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
-    .login-form {
-        margin: 0px 20px;
-    }
 }
