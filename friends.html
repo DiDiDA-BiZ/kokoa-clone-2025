@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
 
     <!-- ===== PAGE TITLE ===== -->
-    <title>Welcome to kokoa Talk</title>
+    <title>Friends - Kokoa Clone</title>
 
     <!-- ===== EXTERNAL RESOURCES ===== -->
     <script src="https://kit.fontawesome.com/2369bc4cc5.js" crossorigin="anonymous"></script>
@@ -35,21 +35,28 @@
         </div>
     </header>
 
-    <!-- ===== WELCOME HEADER ===== -->
-    <!-- 환영 메시지 섹션 -->
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to kokoa Clone</h1>
-        <p class="welcome-header__text">If you have a kokoa account, log in with your email or phone number.</p>
-    </header>
+    <main class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <span class="screen-header__icons"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span class="screen-header__icons"><i class="fa-solid fa-music fa-lg"></i></span>
+        <span class="screen-header__icons"><i class="fa-solid fa-cog fa-lg"></i></span>
+    </main>
 
-    <!-- ===== LOGIN FORM ===== -->
-    <!-- 로그인 폼: 이메일, 비밀번호 입력 및 로그인 버튼 -->
-    <form action="friends.html" method="get" class="login-form">
-        <input type="text" placeholder="Email or Phone number" required class="login-form__input">
-        <input type="password" placeholder="Password" required class="login-form__input">
-        <input type="submit" value="Log In" class="login-form__btn">
-        <a href="#" class="login-form__link">Find Kokoa Account or Password</a>
-    </form>
+    <nav class="nav-bar">
+        <ul class="nav-bar__list">
+            <li class="nav-bar__item"><a href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
+            <li class="nav-bar__item"><a href="#">
+                    <span class="nav-bar__notification-chat">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                </a></li>
+            <li class="nav-bar__item"><a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </a></li>
+            <li class="nav-bar__item"><a href="#">
+                    <span class="nav-bar__notification-more"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a></li>
+        </ul>
+    </nav>
 
 </body>
 

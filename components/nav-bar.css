@@ -1,0 +1,52 @@
+/* ===== NAVIGATION BAR COMPONENT ===== */
+/* 
+ * 하단 네비게이션 바 컴포넌트
+ * 재사용 가능한 네비게이션 UI
+ */
+
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 50px;
+}
+
+.nav-bar__list {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+}
+
+.nav-bar__item {
+    color: #2e363e;
+    position: relative;
+}
+
+.nav-bar__notification-chat {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+/* ===== SMALL NOTIFICATION DOT ===== */
+.nav-bar__notification-more {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    position: absolute;
+    left: 28px;
+    bottom: 25px;
+}
