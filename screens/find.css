@@ -1,26 +1,5 @@
-.find-icons {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px;
-}
-
 .main-screen {
     padding-bottom: 150px;
-}
-
-.find-icons__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.find-icons__icon i {
-    font-size: 36px;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.find-icons__icon span {
-    margin-top: 18px;
 }
 
 .recommended-friends {
