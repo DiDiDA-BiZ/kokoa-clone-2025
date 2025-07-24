@@ -35,24 +35,83 @@
         </div>
     </header>
 
-    <main class="screen-header">
+    <header class="screen-header">
         <h1 class="screen-header__title">Friends</h1>
         <span class="screen-header__icons"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
         <span class="screen-header__icons"><i class="fa-solid fa-music fa-lg"></i></span>
         <span class="screen-header__icons"><i class="fa-solid fa-cog fa-lg"></i></span>
+    </header>
+
+
+    <a id="friends-display-link" href="#">
+        <i class="fa-solid fa-circle-info fa-lg"></i>
+        <span>Friends' Names Display</span>
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="assets/images/avatar.jpeg" class="user-component__avatar user-component__avatar--xl"
+                    alt="avatar">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Dive PAPA</h4>
+                    <!-- <h6 class="user-component__subtitle">Hello! I'm Dive PAPA</h6> -->
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <h2>Channel</h2>
+                <i class="fa-solid fa-chevron-up fa-xs"></i>
+            </div>
+
+            <div class="user-component user-component--list-item">
+                <div class="user-component__column">
+                    <img src="assets/images/kakao_ch.png" class="user-component__avatar user-component__avatar--sm"
+                        alt="avatar">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-component user-component--list-item">
+                <div class="user-component__column">
+                    <img src="assets/images/line_logo.png" class="user-component__avatar user-component__avatar--sm"
+                        alt="avatar">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Naver Line</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                </div>
+            </div>
     </main>
 
     <nav class="nav-bar">
         <ul class="nav-bar__list">
             <li class="nav-bar__item"><a href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
-            <li class="nav-bar__item"><a href="#">
-                    <span class="nav-bar__notification-chat">1</span>
+            <li class="nav-bar__item"><a href="chats.html">
+                    <span class="nav-bar__notification-chat badge">1</span>
                     <i class="fa-regular fa-comment fa-2x"></i>
                 </a></li>
-            <li class="nav-bar__item"><a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            <li class="nav-bar__item"><a href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i>
                 </a></li>
-            <li class="nav-bar__item"><a href="#">
-                    <span class="nav-bar__notification-more"></span>
+            <li class="nav-bar__item"><a href="more.html">
+                    <span class="nav-bar__notification-more badge--small"></span>
                     <i class="fa-solid fa-ellipsis fa-2x"></i>
                 </a></li>
         </ul>

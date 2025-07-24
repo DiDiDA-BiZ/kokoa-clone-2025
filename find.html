@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS FILES ===== -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- ===== PAGE TITLE ===== -->
+    <title>Find - Kokoa Clone</title>
+
+    <!-- ===== EXTERNAL RESOURCES ===== -->
+    <script src="https://kit.fontawesome.com/2369bc4cc5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ===== STATUS BAR ===== -->
+    <!-- 모바일 상태바: 신호, 시간, 배터리 표시 -->
+    <header class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__text">No Service</span>
+            <i class="fa-solid fa-wifi status-bar__icon"></i>
+        </div>
+        <div class="status-bar__column status-bar__column--center">
+            <span class="status-bar__text">18:43</span>
+        </div>
+        <div class="status-bar__column status-bar__column--right">
+            <span class="status-bar__text">11%</span>
+            <i class="fa-solid fa-battery-quarter fa-lg status-bar__icon--battery"></i>
+            <i class="fa-solid fa-bolt status-bar__icon--bolt"></i>
+        </div>
+    </header>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <span class="screen-header__icons"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span class="screen-header__icons">
+            <i class="fa-solid fa-cog fa-lg"></i>
+            <span class="badge--small"></span>
+        </span>
+    </header>
+
+
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <i class="fa-solid fa-qrcode fa-2x"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fa-regular fa-address-book fa-2x"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fa-solid fa-fingerprint fa-2x"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fa-regular fa-envelope fa-2x"></i>
+                <span>Invite</span>
+            </div>
+            </span>
+        </div>
+
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4 class="open-chat__title">Open Chat</h4>
+                <span>Go to Openchat Home<i class="fa-solid fa-chevron-right fa-xs"></i>
+                </span>
+            </div>
+
+            <div class="open-post ">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#BTS</h5>
+                    <h6 class="open-post__hashtags">#bts#army#friends</h6>
+                    <div class="open-post__members">
+                        <img src="assets/images/seoa.jpeg">
+                        <span class="open-post__member-count">802 menbers</span>
+                        <div class="open-post__divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="assets/images/bts_members.jpeg">
+                        <div class="open-post__heart-count">
+                            <i class="fa-solid fa-heart fa-xs"></i>
+                            <span>326</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="open-post">
+            <div class="open-post__column">
+                <h5 class="open-post__title">BTs Gang~</h5>
+                <h6 class="open-post__hashtags">#englishonly #ipurpleyou #jimin #taetae #BTS</h6>
+                <div class="open-post__members">
+                    <img src="assets/images/avatar.png">
+                    <span class="open-post__member-count">299 menbers</span>
+                    <div class="open-post__divider"></div>
+                    <span class="open-post__member-status">Active</span>
+                </div>
+            </div>
+            <div class="open-post__column">
+                <div class="open-post__photo">
+                    <img src="assets/images/bts_gang.jpeg">
+                    <div class="open-post__heart-count">
+                        <i class="fa-solid fa-heart fa-xs"></i>
+                        <span>215</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <nav class="nav-bar">
+        <ul class="nav-bar__list">
+            <li class="nav-bar__item"><a href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
+            <li class="nav-bar__item"><a href="chats.html">
+                    <span class="nav-bar__notification-chat badge">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                </a></li>
+            <li class="nav-bar__item"><a href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </a></li>
+            <li class="nav-bar__item"><a href="more.html">
+                    <span class="nav-bar__notification-more badge--small"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

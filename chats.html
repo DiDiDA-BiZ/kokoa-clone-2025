@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS FILES ===== -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- ===== PAGE TITLE ===== -->
+    <title>Chats - Kokoa Clone</title>
+
+    <!-- ===== EXTERNAL RESOURCES ===== -->
+    <script src="https://kit.fontawesome.com/2369bc4cc5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ===== STATUS BAR ===== -->
+    <!-- 모바일 상태바: 신호, 시간, 배터리 표시 -->
+    <header class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__text">No Service</span>
+            <i class="fa-solid fa-wifi status-bar__icon"></i>
+        </div>
+        <div class="status-bar__column status-bar__column--center">
+            <span class="status-bar__text">18:43</span>
+        </div>
+        <div class="status-bar__column status-bar__column--right">
+            <span class="status-bar__text">11%</span>
+            <i class="fa-solid fa-battery-quarter fa-lg status-bar__icon--battery"></i>
+            <i class="fa-solid fa-bolt status-bar__icon--bolt"></i>
+        </div>
+    </header>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Chats</h1>
+        <span class="screen-header__icons"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span class="screen-header__icons"><i class="fa-regular fa-comment-dots fa-lg"></i></span>
+        <span class="screen-header__icons"><i class="fa-solid fa-music fa-lg"></i></span>
+        <span class="screen-header__icons"><i class="fa-solid fa-cog fa-lg"></i></span>
+    </header>
+
+
+    <main class="main-screen">
+        <div class="user-component user-component--list-item">
+            <div class="user-component__column">
+                <img src="assets/images/kakao_logo_round.png"
+                    class="user-component__avatar user-component__avatar--regular" alt="avatar">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">KokoaTalk</h4>
+                    <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <span class="user-component__time">21:22</span>
+                <span class="user-component__unread badge">1</span>
+            </div>
+        </div>
+
+        <div class="user-component user-component--list-item">
+            <div class="user-component__column">
+                <img src="assets/images/seoa.jpeg" class="user-component__avatar user-component__avatar--regular"
+                    alt="avatar">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Lovely SeoA</h4>
+                    <h6 class="user-component__subtitle">아빠 언제와??</h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <span class="user-component__time">07:12</span>
+                <span class="user-component__unread badge">8</span>
+            </div>
+        </div>
+
+    </main>
+
+    <nav class="nav-bar">
+        <ul class="nav-bar__list">
+            <li class="nav-bar__item"><a href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
+            <li class="nav-bar__item"><a href="chats.html">
+                    <span class="nav-bar__notification-chat badge">1</span>
+                    <i class="fa-solid fa-comment fa-2x"></i>
+                </a></li>
+            <li class="nav-bar__item"><a href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </a></li>
+            <li class="nav-bar__item"><a href="more.html">
+                    <span class="nav-bar__notification-more badge--small"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
