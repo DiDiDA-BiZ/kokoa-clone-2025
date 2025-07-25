@@ -1,0 +1,236 @@
+.chat-room-body {
+    background-color: #abc1d1;
+    height: 300vh;
+}
+
+.chat-room-body .status-bar {
+    background-color: #abc1d1;
+    z-index: 20;
+}
+
+.chat-room-body .alt-header {
+    position: sticky;
+    top: 26px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #abc1d1;
+    z-index: 10;
+}
+
+
+
+.main-chat {
+    margin-top: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.chat__timestamp {
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #92a4b2;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+    animation: fadeIn 0.5s linear;
+
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+    animation: slideInFromLeft 1s ease-out forwards;
+    opacity: 0;
+    /* 초기에 숨김 */
+}
+
+.message-row:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.message-row:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.message-row__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.message-row__author {
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.message-row__info {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.message-row__text {
+    font-size: 18px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.message-row__time {
+    font-size: 14px;
+    opacity: 0.7;
+    display: block;
+}
+
+.message-row--own {
+    justify-content: flex-end;
+}
+
+
+.message-row--own .message-row__text {
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 20px;
+}
+
+.message-row--own {
+    animation: slideInFromRight 1.6s ease-out forwards;
+}
+
+.message-row--own .message-row__info {
+    flex-direction: row-reverse;
+}
+
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.reply .reply__column:first-child,
+.reply .reply__column:last-child button {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within {
+    transform: translateY(80px);
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .reply__column:last-child button {
+    opacity: 0;
+}
+
+.reply:focus-within input {
+    width: 95vw;
+    transform: translateX(-12%) translateY(-80px);
+}
+
+.reply input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 50px 0 15px;
+    /* 오른쪽에 버튼 공간 확보 */
+    border: none;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease-in-out;
+}
+
+.reply .reply__column:first-child {
+    width: 10%;
+}
+
+.reply .reply__column:last-child {
+    width: 90%;
+    position: relative;
+}
+
+
+
+.reply__column:first-child i {
+    opacity: 0.5;
+}
+
+.reply__column:last-child button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.reply__column:last-child button:last-child {
+    right: 5px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reply__column:last-child button:nth-last-child(2) {
+    right: 35px;
+}
+
+/* ===== MESSAGE ANIMATIONS ===== */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

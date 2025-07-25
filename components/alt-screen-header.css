@@ -1,0 +1,39 @@
+.alt-header {
+    padding: var(--horizontal-space);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alt-header__title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.alt-header__column {
+    flex: 1;
+}
+
+.alt-header__column:nth-child(2) {
+    flex: 2;
+    /* 가운데 영역을 2배로 확장 */
+}
+
+.alt-header__column:first-child {
+    justify-content: flex-start;
+}
+
+.alt-header__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.alt-header__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alt-header__column:last-child span:first-child i {
+    margin-right: 15px;
+}

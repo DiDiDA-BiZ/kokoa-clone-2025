@@ -24,6 +24,10 @@
 /* 배지 컴포넌트 */
 @import "../components/icon-row.css";
 /* 아이콘 행 컴포넌트 */
+@import "../components/alt-screen-header.css";
+/* 알트 화면 헤더 컴포넌트 */
+@import "../components/no-mobile.css";
+/* 모바일 페이지 전체 */
 @import "../screens/login.css";
 /* 로그인 페이지 전체 */
 @import "../screens/friends.css";
@@ -32,6 +36,10 @@
 /* 찾기 페이지 전체 */
 @import "../screens/more.css";
 /* 더보기 페이지 전체 */
+@import "../screens/settings.css";
+/* 설정 페이지 전체 */
+@import "../screens/chat-room.css";
+/* 채팅방 페이지 전체 */
 
 /* ===== GLOBAL STYLES ===== */
 body {

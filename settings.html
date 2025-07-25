@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
 
     <!-- ===== PAGE TITLE ===== -->
-    <title>Chats - Kokoa Clone</title>
+    <title>Settings - Kokoa Clone</title>
 
     <!-- ===== EXTERNAL RESOURCES ===== -->
     <script src="https://kit.fontawesome.com/2369bc4cc5.js" crossorigin="anonymous"></script>
@@ -35,51 +35,44 @@
         </div>
     </header>
 
-    <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
-        <span class="screen-header__icons"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-        <span class="screen-header__icons"><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-        <span class="screen-header__icons"><i class="fa-solid fa-music fa-lg"></i></span>
-        <span class="screen-header__icons">
-            <a href="settings.html">
-                <i class="fa-solid fa-cog fa-lg"></i>
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="more.html">
+                <i class="fa-solid fa-chevron-left fa-2x"></i>
             </a>
-        </span>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Settings</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        </div>
     </header>
 
-
     <main class="main-screen">
-        <a href="chat-room.html">
-            <div class="user-component user-component--list-item">
-                <div class="user-component__column">
-                    <img src="assets/images/kakao_logo_round.png"
-                        class="user-component__avatar user-component__avatar--regular" alt="avatar">
-                    <div class="user-component__text">
-                        <h4 class="user-component__title">KokoaTalk</h4>
-                        <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
-                    </div>
+        <ul class="settings-list">
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span class="settings__setting-title">Notices</span>
                 </div>
-                <div class="user-component__column">
-                    <span class="user-component__time">21:22</span>
-                    <span class="user-component__unread badge">1</span>
+                <div class="settings__setting-column"></div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fa-solid fa-flask"></i>
+                    <span class="settings__setting-title">Kokoa Lab</span>
                 </div>
-            </div>
+                <div class="settings__setting-column"></div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="settings__setting-title">Version</span>
+                </div>
+                <div class="settings__setting-column">Latest Version</div>
 
-            <div class="user-component user-component--list-item">
-                <div class="user-component__column">
-                    <img src="assets/images/seoa.jpeg" class="user-component__avatar user-component__avatar--regular"
-                        alt="avatar">
-                    <div class="user-component__text">
-                        <h4 class="user-component__title">Lovely SeoA</h4>
-                        <h6 class="user-component__subtitle">아빠 언제 와??</h6>
-                    </div>
-                </div>
-                <div class="user-component__column">
-                    <span class="user-component__time">17:12</span>
-                    <span class="user-component__unread badge">8</span>
-                </div>
-            </div>
-        </a>
+            </li>
     </main>
 
     <nav class="nav-bar">
@@ -87,7 +80,7 @@
             <li class="nav-bar__item"><a href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
             <li class="nav-bar__item"><a href="chats.html">
                     <span class="nav-bar__notification-chat badge">1</span>
-                    <i class="fa-solid fa-comment fa-2x"></i>
+                    <i class="fa-regular fa-comment fa-2x"></i>
                 </a></li>
             <li class="nav-bar__item"><a href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i>
                 </a></li>
