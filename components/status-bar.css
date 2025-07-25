@@ -11,38 +11,127 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* 세로 중앙 정렬 추가 */
     padding: 5px 3px;
+    background-color: white;
+    /* 배경색 추가 */
+    z-index: 1000;
+    /* 다른 요소 위에 표시 */
 }
 
 /* ===== ELEMENTS ===== */
 .status-bar__column {
     width: 33%;
+    display: flex;
+    /* flex 컨테이너로 변경 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    gap: 3px;
+    /* 아이콘과 텍스트 간격 */
 }
 
 .status-bar__text {
-    margin-right: 5px;
+    margin-right: 3px;
+    /* 간격 줄임 */
+    font-size: 14px;
+    /* 기본 폰트 크기 원래대로 */
+    white-space: nowrap;
+    /* 줄바꿈 방지 */
 }
 
 .status-bar__icon {
-    margin: 0px 5px;
+    margin: 0px 2px;
+    /* 간격 줄임 */
+    font-size: 14px;
+    /* 기본 아이콘 크기 원래대로 */
 }
 
 /* ===== MODIFIERS ===== */
 .status-bar__column--center {
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* 세로 중앙 정렬 추가 */
 }
 
 .status-bar__column--right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 2px;
+    /* 아이콘 간격 */
 }
 
 .status-bar__icon--battery {
-    margin: 0px 5px;
+    margin: 0px 2px;
+    /* 간격 줄임 */
+    font-size: 14px;
+    /* 기본 아이콘 크기 원래대로 */
 }
 
 .status-bar__icon--bolt {
-    margin-left: 5px;
+    margin-left: 2px;
+    /* 간격 줄임 */
+    font-size: 14px;
+    /* 기본 아이콘 크기 원래대로 */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* 363px 이하에서의 반응형 처리 */
+@media screen and (max-width: 363px) {
+    .status-bar {
+        padding: 3px 2px;
+        /* 패딩 줄임 */
+    }
+
+    .status-bar__text {
+        font-size: 10px;
+        /* 더 작은 폰트 */
+        margin-right: 2px;
+    }
+
+    .status-bar__icon {
+        font-size: 10px;
+        /* 더 작은 아이콘 */
+        margin: 0px 1px;
+    }
+
+    .status-bar__icon--battery {
+        font-size: 10px;
+        margin: 0px 1px;
+    }
+
+    .status-bar__icon--bolt {
+        font-size: 10px;
+        margin-left: 1px;
+    }
+
+    .status-bar__column {
+        gap: 2px;
+        /* 간격 더 줄임 */
+    }
+
+    .status-bar__column--right {
+        gap: 1px;
+        /* 오른쪽 컬럼 간격 더 줄임 */
+    }
+}
+
+/* 320px 이하에서의 추가 최적화 */
+@media screen and (max-width: 320px) {
+    .status-bar__text {
+        font-size: 9px;
+        /* 매우 작은 폰트 */
+    }
+
+    .status-bar__icon {
+        font-size: 9px;
+        /* 매우 작은 아이콘 */
+    }
+
+    .status-bar__column {
+        gap: 1px;
+        /* 최소 간격 */
+    }
 }
